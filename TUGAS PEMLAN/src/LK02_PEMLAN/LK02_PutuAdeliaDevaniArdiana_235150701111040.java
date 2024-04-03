@@ -219,6 +219,10 @@ class Truk extends Kendaraan {
         System.out.println("Kapasitas Muatan Truk           : " + this.kapasitasMuatan + " kg");
         System.out.println("Kapasitas Maksimum Muatan Truk  : " + this.maxMuatan + " kg");
     }
+    public void cekMuatan() {
+        System.out.println("Muatan saat ini     : " + this.kapasitasMuatan);
+        System.out.println("Sisa Kapasitas      : " + (this.maxMuatan - this.kapasitasMuatan));
+}
 }
 
 public class LK02_PutuAdeliaDevaniArdiana_235150701111040{
@@ -309,7 +313,7 @@ public class LK02_PutuAdeliaDevaniArdiana_235150701111040{
                     }
                     break;
                 case 8:
-                    t1.showInfoKendaraan();
+                    t1.cekMuatan();
                     break;
                 case 9:
                     t1.showDriver();
