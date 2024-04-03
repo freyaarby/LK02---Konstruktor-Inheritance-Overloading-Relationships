@@ -1,6 +1,6 @@
 package LK02_PEMLAN;
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 // Kelas Driver dengan atribut no_sim dan nama
 class Driver {
@@ -111,6 +111,19 @@ class Bus extends Kendaraan {
         this.tujuan = tujuan;
     }
 
+    //behavior bus
+    public void busMaju(){
+        System.out.println("Bus dengan plat " + this.platNomor + " sedang maju");
+    }
+
+    public void busMundur(){
+        System.out.println("Bus dengan plat " + this.platNomor + " sedang mundur");
+    }
+
+    public void busBelok(){
+        System.out.println("Bus dengan plat " + this.platNomor + " sedang belok");
+    }
+
     // Overriding method penumpangNaik untuk Bus
     @Override
     public void penumpangNaik(String namaPenumpang) throws Exception { // Jawaban Soal 5: Overriding function penumpangNaik untuk Bus
@@ -145,6 +158,19 @@ class Truk extends Kendaraan {
         super(platNomor, maxPenumpang);
         this.kapasitasMuatan = kapasitasMuatan;
         this.maxMuatan = maxMuatan;
+    }
+
+    //behavior truk
+    public void trukMaju(){
+        System.out.println("Truk dengan plat " + this.platNomor + " sedang maju");
+    }
+
+    public void trukMundur(){
+        System.out.println("Truk dengan plat " + this.platNomor + " sedang mundur");
+    }
+
+    public void trukBelok(){
+        System.out.println("Truk dengan plat " + this.platNomor + " sedang belok");
     }
 
     // Fungsi untuk menaikkan muatan truk
@@ -195,7 +221,7 @@ class Truk extends Kendaraan {
     }
 }
 
-public class LK02_PutuAdeliaDevaniArdiana_235150701111040 {
+public class LK02_PutuAdeliaDevaniArdiana_235150701111040{
     public static void main(String[] args) {
          int pilihan = 0;
 
